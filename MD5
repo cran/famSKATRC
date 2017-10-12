@@ -1,0 +1,12 @@
+8d3d8d51a4725904cd73215b93dce6c9 *DESCRIPTION
+3ca48d4bf5a529f1d5773fbb8521784c *NAMESPACE
+0c82f7c126dd1409ad60d22ce2fbeac3 *R/famSKAT_RC.R
+75ef52a4b481c6a45ef86eec9763bffc *R/onAttach.R
+8428d3383343921ef4f6ea38e28be3ab *R/process_data.R
+67fa0bfc6838b89c446a5e0b26f1ecbd *build/partial.rdb
+889dcc460df46ad14522df8d5174c3f5 *data/sample.ped.geno.rda
+16c46a17304c1dfe8fdd9a0b5d3af25e *inst/extdata/data
+56a1d63ea28b5df6f7dadc697b85b64a *man/famSKATRC-package.Rd
+e2d3728862418e4d2b5eefdd208b3a02 *man/famSKAT_RC.Rd
+4b43e2b59966f126550ec0e4ddf1cb87 *man/process_data.Rd
+2b8e1c50ad65bc2a2c10f3f3e68b41d5 *man/sample.ped.geno.Rd

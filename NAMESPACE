@@ -1,0 +1,7 @@
+exportPattern("^[[:alpha:]]+")
+import("CompQuadForm")
+import("kinship2")
+import("coxme")
+import("bdsmatrix")
+importFrom("stats", "as.formula", "rbinom")
+importFrom("utils", "read.table")
