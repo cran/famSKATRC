@@ -119,15 +119,13 @@ C = SET2 ; R=SET1
 	for (dd in 1:length(phi))
 	{
 	Q = t(res) %*% SIGMAi %*% (phi[dd]*K1+(1-phi[dd])*K2) %*% SIGMAi %*% res
-	#FIX
-	pfamskat<-0.5
-# 	eig<-eigen(  SIGMAi %*% (phi[dd]*K1+(1-phi[dd])*K2) %*% SIGMAi %*% P, symmetric=F, only.values=T)
-#         evals<-eig$values
-#         tmpout<-davies(Q, evals, acc=acc)
-#         pfamskat<-tmpout$Qq
-#         pfamskat<-min(pfamskat,1)
-#         pfamskat<-max(pfamskat,0)
-#         message<-tmpout$ifault
+	eig<-eigen(  SIGMAi %*% (phi[dd]*K1+(1-phi[dd])*K2) %*% SIGMAi %*% P, symmetric=F, only.values=T)
+        evals<-eig$values
+        tmpout<-davies(Q, evals, acc=acc)
+        pfamskat<-tmpout$Qq
+        pfamskat<-min(pfamskat,1)
+        pfamskat<-max(pfamskat,0)
+        message<-tmpout$ifault
 	temp_pvalues = c(temp_pvalues, pfamskat)
 	}
 return(temp_pvalues)
